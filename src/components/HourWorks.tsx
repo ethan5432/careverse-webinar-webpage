@@ -29,7 +29,7 @@ export default function HourWorks() {
               <p className="mt-5 max-w-[14rem] text-base font-normal leading-[1.5] text-body">{title}</p>
               {i === 2 && (
                 <div className="mt-5">
-                  <Button href="#" variant="pink" className="px-6 py-2.5">
+                  <Button href="https://careverse-creator-application.vercel.app/" variant="pink" className="px-6 py-2.5">
                     Apply to join
                   </Button>
                 </div>

@@ -14,7 +14,7 @@ export default function Nav() {
           <a href="#" className="hidden text-sm font-medium text-ink/70 hover:text-ink transition-colors sm:block">
             Creator Network
           </a>
-          <Button href="#" variant="pink" className="px-5 py-2.5">
+          <Button href="https://careverse-creator-application.vercel.app/" variant="pink" className="px-5 py-2.5">
             Apply to join
           </Button>
         </div>

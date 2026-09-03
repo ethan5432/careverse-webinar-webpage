@@ -12,7 +12,7 @@ export default function Footer() {
             Careverse · Care Access PBC
           </p>
         </div>
-        <Button href="#" variant="pink" className="px-5 py-2.5">
+        <Button href="https://careverse-creator-application.vercel.app/" variant="pink" className="px-5 py-2.5">
           Apply to join
         </Button>
       </div>

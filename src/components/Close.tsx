@@ -26,7 +26,7 @@ export default function Close() {
           <Button href="https://webinar-registration-page-six.vercel.app/" variant="pink">
             Reserve my seat
           </Button>
-          <Button href="#" variant="outline">
+          <Button href="https://careverse-creator-application.vercel.app/" variant="outline">
             Apply to join
           </Button>
         </div>
