@@ -6,7 +6,7 @@ export default function Nav() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="flex items-center gap-2.5">
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-pinkwash to-bluewash">
-            <img src="/image%20copy.png" alt="" className="h-8 w-8 object-contain" />
+            <img src="/careverse_logo_(2).png" alt="" className="h-8 w-8 object-contain" />
           </span>
           <span className="font-sans text-xl font-bold tracking-h2 text-ink">Careverse</span>
         </a>

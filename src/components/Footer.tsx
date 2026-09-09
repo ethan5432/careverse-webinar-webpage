@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
         <div className="flex items-center gap-2.5">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-pinkwash to-bluewash">
-            <img src="/image%20copy.png" alt="" className="h-7 w-7 object-contain" />
+            <img src="/careverse_logo_(2).png" alt="" className="h-7 w-7 object-contain" />
           </span>
           <p className="text-sm text-body">
             Careverse · Care Access PBC
