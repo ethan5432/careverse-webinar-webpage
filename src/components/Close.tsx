@@ -8,9 +8,7 @@ export default function Close() {
         <div className="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-pinkwash blur-3xl opacity-70" />
       </div>
       <div className="mx-auto max-w-2xl px-6 text-center">
-        <h2 className="font-sans text-3xl font-bold tracking-h2 text-ink sm:text-4xl">Join us on September 30</h2>
-
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-base font-medium text-ink/80">
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-base font-medium text-ink/80">
           <span className="flex items-center gap-1.5">
             <Calendar className="h-4 w-4 text-blush" /> September 30
           </span>
