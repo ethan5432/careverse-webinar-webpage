@@ -1,10 +1,9 @@
 import { Headphones, Eye, Send } from 'lucide-react';
-import Button from './Button';
 
 const steps = [
-  { icon: Headphones, title: 'Listen to a global healthcare leader' },
-  { icon: Eye, title: 'See Careverse in action and how you can partner' },
-  { icon: Send, title: 'Apply to join our network' },
+  { icon: Eye, title: 'Watch a live demo from a global healthcare leader' },
+  { icon: Send, title: 'See how creators partner with Careverse™' },
+  { icon: Headphones, title: 'Apply to join our network' },
 ];
 
 export default function HourWorks() {
@@ -12,7 +11,7 @@ export default function HourWorks() {
     <section className="relative overflow-hidden bg-gradient-to-b from-bluewash/20 to-softwhite py-16">
       <div className="mx-auto max-w-6xl px-6">
         <p className="mb-12 text-center font-sans text-2xl font-650 tracking-h2 text-ink sm:text-3xl">
-          How the hour works
+          How the session works
         </p>
 
         <div className="relative grid gap-8 md:grid-cols-3">
@@ -27,13 +26,6 @@ export default function HourWorks() {
                 </div>
               </div>
               <p className="mt-5 max-w-[14rem] text-base font-normal leading-[1.5] text-body">{title}</p>
-              {i === 2 && (
-                <div className="mt-5">
-                  <Button href="https://careverse-creator-application.vercel.app/" variant="pink" className="px-6 py-2.5">
-                    Apply to join
-                  </Button>
-                </div>
-              )}
             </div>
           ))}
         </div>

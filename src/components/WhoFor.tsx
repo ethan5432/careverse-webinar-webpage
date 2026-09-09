@@ -3,7 +3,7 @@ import { Heart, DollarSign, Users } from 'lucide-react';
 const items = [
   { icon: Heart, text: 'Already talk about care, wellness, family, beauty, or fitness.' },
   { icon: DollarSign, text: 'Want a simple way to earn when you help people.' },
-  { icon: Users, text: 'Have a passion and authentic content. You do not need a huge following.' },
+  { icon: Users, text: 'Get questions and don’t have a next step to send people to.' },
 ];
 
 export default function WhoFor() {

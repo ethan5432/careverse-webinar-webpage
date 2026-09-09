@@ -8,7 +8,7 @@ export default function Nav() {
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-pinkwash to-bluewash">
             <img src="/careverse_logo_(2).png" alt="" className="h-8 w-8 object-contain" />
           </span>
-          <span className="font-sans text-xl font-bold tracking-h2 text-ink">Careverse</span>
+          <span className="font-sans text-xl font-bold tracking-h2 text-ink">Careverse™</span>
         </a>
         <div className="flex items-center gap-6">
           <a href="#" className="hidden text-sm font-medium text-ink/70 hover:text-ink transition-colors sm:block">

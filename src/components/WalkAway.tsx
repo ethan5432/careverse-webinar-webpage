@@ -1,7 +1,7 @@
 const items = [
-  { num: '01', title: 'What Careverse is', text: 'A new way for people to discover and connect with care.' },
+  { num: '01', title: 'What Careverse™ actually does', text: 'A live look at the product.' },
   { num: '02', title: 'How it helps people', text: 'Making care easier to find, understand, and trust.' },
-  { num: '03', title: 'How creators fit', text: 'Your voice guides people to care — and you earn for it.' },
+  { num: '03', title: 'How creators fit', text: 'How the program works and how to apply when you’re ready.' },
 ];
 
 export default function WalkAway() {

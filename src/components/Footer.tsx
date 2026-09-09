@@ -9,11 +9,11 @@ export default function Footer() {
             <img src="/careverse_logo_(2).png" alt="" className="h-7 w-7 object-contain" />
           </span>
           <p className="text-sm text-body">
-            Careverse · Care Access PBC
+            Careverse™ · Care Access PBC
           </p>
         </div>
-        <Button href="https://careverse-creator-application.vercel.app/" variant="pink" className="px-5 py-2.5">
-          Apply to join
+        <Button href="https://webinar-registration-page-six.vercel.app/" variant="pink" className="px-5 py-2.5">
+          Reserve my seat
         </Button>
       </div>
     </footer>

@@ -26,13 +26,10 @@ export default function Close() {
           <Button href="https://webinar-registration-page-six.vercel.app/" variant="pink">
             Reserve my seat
           </Button>
-          <Button href="https://careverse-creator-application.vercel.app/" variant="outline">
-            Apply to join
-          </Button>
         </div>
 
-        <p className="mt-6 text-sm font-normal leading-[1.5] text-body/70">
-          Already sure? Apply to the Creator Network after you register.
+        <p className="mt-6 text-sm text-body/70">
+          Already sure? <a href="https://careverse-creator-application.vercel.app/" className="font-medium text-ink/70 underline underline-offset-2 hover:text-ink transition-colors">Apply after you register.</a>
         </p>
       </div>
     </section>

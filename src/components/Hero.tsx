@@ -114,21 +114,20 @@ export default function Hero() {
 
       <div className="mx-auto max-w-6xl px-6 pt-16 text-center lg:pt-20">
         <h1 className="font-sans text-5xl font-black tracking-tight leading-[1.05] text-blush sm:text-6xl lg:text-7xl">
-          Careverse Creator Webinar
+          Creator webinar
         </h1>
       </div>
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-12 lg:grid-cols-2 lg:py-16">
         <div>
           <h2 className="font-sans text-4xl font-bold tracking-h1 leading-[1.1] text-ink sm:text-5xl lg:text-6xl">
-            Earn by helping people{' '}
-            <span className="relative inline-block">
-              find care
-              <span className="absolute -bottom-1 left-0 right-0 h-3 rounded-full bg-blush/70 -z-10" />
-            </span>
+            See Careverse™ in action
           </h2>
           <p className="mt-6 max-w-md text-lg font-normal leading-[1.5] text-body">
             A 45-minute session on Careverse and how creators partner with us.
+          </p>
+          <p className="mt-3 max-w-md text-lg font-normal leading-[1.5] text-body">
+            See cost and coverage, book the visit and the follow-up, and keep providers in one thread so people never start from scratch.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium text-ink/80">
@@ -149,13 +148,14 @@ export default function Hero() {
             <Button href="https://webinar-registration-page-six.vercel.app/" variant="pink">
               Reserve my seat
             </Button>
-            <Button href="https://careverse-creator-application.vercel.app/" variant="outline">
-              Apply to join
-            </Button>
           </div>
 
           <p className="mt-5 text-sm text-body/70">
             No follower minimum. Earn 25% commission on every purchase.
+          </p>
+
+          <p className="mt-3 text-sm text-body/60">
+            Already sure? <a href="https://careverse-creator-application.vercel.app/" className="font-medium text-ink/70 underline underline-offset-2 hover:text-ink transition-colors">Apply after you register.</a>
           </p>
         </div>
 
