@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Calendar, Clock, Play, Pause } from 'lucide-react';
+import { Calendar, Clock, Play, Pause, Check } from 'lucide-react';
 import Button from './Button';
 
 const VIDEO_SRC =
@@ -106,61 +106,62 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute -left-32 top-0 h-96 w-96 rounded-full bg-pinkwash blur-3xl opacity-70" />
-        <div className="absolute -right-32 top-40 h-96 w-96 rounded-full bg-bluewash blur-3xl opacity-60" />
-      </div>
-
+    <section className="relative overflow-hidden bg-cream">
       <div className="mx-auto max-w-6xl px-6 pt-16 text-center lg:pt-20">
-        <h1 className="font-sans text-5xl font-black tracking-tight leading-[1.05] text-blush sm:text-6xl lg:text-7xl">
-          Creator webinar
+        <div className="mb-6 flex items-center justify-center gap-3">
+          <span className="h-[3px] w-6 bg-red" />
+          <span className="text-xs font-extrabold tracking-eyebrow text-muted">CREATOR WEBINAR</span>
+        </div>
+        <h1 className="font-sans text-h1 text-ink">
+          See <span className="text-red">Careverse™</span> in action
         </h1>
       </div>
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-12 lg:grid-cols-2 lg:py-16">
         <div>
-          <h2 className="font-sans text-4xl font-bold tracking-h1 leading-[1.1] text-ink sm:text-5xl lg:text-6xl">
-            See Careverse™ in action
-          </h2>
-          <p className="mt-6 max-w-md text-lg font-normal leading-[1.5] text-body">
+          <p className="mt-6 max-w-[650px] text-xl font-normal leading-[1.62] text-body">
             A 45-minute session on Careverse and how creators partner with us.
           </p>
-          <p className="mt-3 max-w-md text-lg font-normal leading-[1.5] text-body">
+          <p className="mt-3 max-w-[650px] text-lg font-normal leading-[1.62] text-body">
             See cost and coverage, book the visit and the follow-up, and keep providers in one thread so people never start from scratch.
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium text-ink/80">
+          <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium text-body">
             <span className="flex items-center gap-1.5">
-              <Calendar className="h-4 w-4 text-blush" /> September 30
+              <Calendar className="h-4 w-4 text-red" /> September 30
             </span>
-            <span className="text-ink/20">·</span>
+            <span className="text-line">·</span>
             <span>2:00 PM ET</span>
-            <span className="text-ink/20">·</span>
+            <span className="text-line">·</span>
             <span className="flex items-center gap-1.5">
-              <Clock className="h-4 w-4 text-blush" /> 45 minutes
+              <Clock className="h-4 w-4 text-red" /> 45 minutes
             </span>
-            <span className="text-ink/20">·</span>
+            <span className="text-line">·</span>
             <span>Free</span>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button href="https://webinar-registration-page-six.vercel.app/" variant="pink">
+            <Button href="https://webinar-registration-page-six.vercel.app/" variant="ink">
               Reserve my seat
             </Button>
           </div>
 
-          <p className="mt-5 text-sm text-body/70">
-            No follower minimum. Earn 25% commission on every purchase.
-          </p>
+          <div className="mt-5 flex items-center gap-2">
+            <span className="flex h-[19px] w-[19px] items-center justify-center rounded-full bg-[#E8FBF4]">
+              <Check className="h-3 w-3 text-good" />
+            </span>
+            <p className="text-[13px] font-extrabold text-body">
+              No follower minimum. Earn 25% commission on every purchase.
+            </p>
+          </div>
 
-          <p className="mt-3 text-sm text-body/60">
-            Already sure? <a href="https://careverse-creator-application.vercel.app/" className="font-medium text-ink/70 underline underline-offset-2 hover:text-ink transition-colors">Apply after you register.</a>
+          <p className="mt-3 text-sm text-muted">
+            Already sure? <a href="https://careverse-creator-application.vercel.app/" className="font-medium text-ink underline underline-offset-2 hover:text-red transition-colors">Apply after you register.</a>
           </p>
         </div>
 
         <div className="relative">
-          <div className="relative overflow-hidden rounded-3xl bg-black ring-1 ring-ink/5">
+          <div className="relative overflow-hidden rounded-card bg-black ring-1 ring-line">
             <video
               ref={videoRef}
               src={VIDEO_SRC}
@@ -174,10 +175,10 @@ export default function Hero() {
               <button
                 type="button"
                 onClick={toggle}
-                className="absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-gradient-to-br from-pinkwash/30 via-transparent to-bluewash/30 transition-opacity hover:from-pinkwash/40"
+                className="absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-4 bg-black/20 transition-opacity"
                 aria-label="Play video"
               >
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/80 shadow-lg ring-1 ring-ink/5 transition-transform hover:scale-105">
+                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-lg ring-1 ring-line transition-transform hover:scale-105">
                   <Play className="h-7 w-7 translate-x-0.5 text-ink" fill="currentColor" />
                 </span>
                 <span className="text-sm font-medium text-white drop-shadow">Webinar preview</span>
@@ -187,7 +188,7 @@ export default function Hero() {
               <button
                 type="button"
                 onClick={toggle}
-                className="absolute bottom-16 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 shadow-lg ring-1 ring-ink/5 transition-transform hover:scale-105"
+                className="absolute bottom-16 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 shadow-lg ring-1 ring-line transition-transform hover:scale-105"
                 aria-label="Pause video"
               >
                 <Pause className="h-5 w-5 text-ink" fill="currentColor" />
@@ -213,7 +214,7 @@ export default function Hero() {
                     style={{ width: `${bufPct}%` }}
                   />
                   <div
-                    className="absolute h-full rounded-full bg-blush"
+                    className="absolute h-full rounded-full bg-red"
                     style={{ width: `${pct}%` }}
                   />
                 </div>
@@ -227,10 +228,10 @@ export default function Hero() {
               </span>
             </div>
           </div>
-          <div className="mt-4 inline-flex items-center gap-3 rounded-2xl bg-white px-5 py-3 shadow-lg ring-1 ring-ink/5">
-            <p className="font-sans text-lg font-bold tracking-h2 text-ink">David Corso</p>
-            <span className="h-4 w-px bg-ink/10" />
-            <p className="text-xs font-normal text-body">Chief Partnerships Officer</p>
+          <div className="mt-4 inline-flex items-center gap-3 rounded-card bg-white px-5 py-3 shadow-lg ring-1 ring-line">
+            <p className="font-sans text-lg font-bold tracking-tight text-ink">David Corso</p>
+            <span className="h-4 w-px bg-line" />
+            <p className="text-xs font-normal text-muted">Chief Partnerships Officer</p>
           </div>
         </div>
       </div>

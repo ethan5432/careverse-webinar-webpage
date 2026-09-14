@@ -1,20 +1,23 @@
 type ButtonProps = {
   href: string;
   children: React.ReactNode;
-  variant?: 'pink' | 'outline';
+  variant?: 'ink' | 'white' | 'red';
   className?: string;
 };
 
-export default function Button({ href, children, variant = 'pink', className = '' }: ButtonProps) {
+export default function Button({ href, children, variant = 'ink', className = '' }: ButtonProps) {
   const base =
-    'inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold tracking-tight transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]';
+    'inline-flex items-center justify-center rounded-full text-[15px] font-extrabold tracking-tight transition-all duration-220 hover:-translate-y-0.5';
+  const heights = 'h-[54px] px-7';
   const styles =
-    variant === 'pink'
-      ? 'bg-blush text-ink hover:bg-blush/90'
-      : 'bg-white text-ink border border-ink/15 hover:border-ink/30';
+    variant === 'ink'
+      ? 'bg-ink text-white'
+      : variant === 'white'
+      ? 'bg-white text-ink border border-line'
+      : 'bg-red text-white hover:bg-red-deep';
 
   return (
-    <a href={href} className={`${base} ${styles} ${className}`}>
+    <a href={href} className={`${base} ${heights} ${styles} ${className}`}>
       {children}
     </a>
   );
