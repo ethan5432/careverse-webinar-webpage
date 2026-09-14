@@ -1,4 +1,4 @@
-import { Calendar, Clock, Timer, Check } from 'lucide-react';
+import { Calendar, Clock, Timer } from 'lucide-react';
 import Button from './Button';
 
 type CloseProps = {
@@ -29,16 +29,7 @@ export default function Close({ onCTAClick }: CloseProps) {
           </Button>
         </div>
 
-        <div className="mt-6 flex items-center justify-center gap-2">
-          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#E8FBF4]">
-            <Check className="h-3 w-3 text-good" />
-          </span>
-          <p className="text-sm font-semibold text-ink">
-            No follower minimum. No healthcare background required.
-          </p>
-        </div>
-
-        <p className="mt-3 text-sm text-muted">
+        <p className="mt-4 text-sm text-muted">
           Already sure? <a href="#" onClick={(e) => { e.preventDefault(); onCTAClick(); }} className="font-semibold text-ink underline underline-offset-2 hover:text-red transition-colors">Apply after you register.</a>
         </p>
       </div>

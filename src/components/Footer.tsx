@@ -10,9 +10,7 @@ export default function Footer({ onCTAClick }: FooterProps) {
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <div className="flex items-center rounded-full bg-white px-4 py-1.5">
-            <span className="font-display text-lg font-extrabold tracking-tight text-ink">
-              care<span className="text-red">v</span>erse
-            </span>
+            <img src="/careverse_wordmark.svg" alt="Careverse" className="h-5 object-contain" />
           </div>
           <Button onClick={onCTAClick} variant="white" className="h-11 px-5 text-sm">
             Reserve my seat
