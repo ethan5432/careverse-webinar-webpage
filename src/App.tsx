@@ -24,7 +24,7 @@ export default function App() {
         <HourWorks />
         <Close onCTAClick={openModal} />
       </main>
-      <Footer onCTAClick={openModal} />
+      <Footer />
       <RegistrationModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </div>
   );

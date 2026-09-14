@@ -12,7 +12,7 @@ export default function Nav({ onCTAClick }: NavProps) {
           <img src="/careverse_wordmark.svg" alt="Careverse" className="h-6 object-contain" />
         </a>
         <div className="flex items-center gap-5">
-          <a href="#" className="hidden text-sm font-semibold text-ink underline underline-offset-4 transition-colors hover:text-red sm:block">
+          <a href="#" className="hidden text-sm font-semibold text-ink transition-colors hover:text-red sm:block">
             Partner Program
           </a>
           <Button onClick={onCTAClick} variant="ink" className="h-10 px-5 text-sm">
