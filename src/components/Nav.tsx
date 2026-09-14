@@ -1,17 +1,23 @@
 import Button from './Button';
 
-export default function Nav() {
+type NavProps = {
+  onCTAClick: () => void;
+};
+
+export default function Nav({ onCTAClick }: NavProps) {
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-cream/88 backdrop-blur-md">
-      <nav className="mx-auto flex h-[82px] max-w-6xl items-center justify-between px-6">
-        <a href="#" className="flex items-center">
-          <img src="/careverse_wordmark.svg" alt="Careverse" className="h-7 object-contain" />
+    <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur-md">
+      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+        <a href="#" className="flex items-center" aria-label="Careverse home">
+          <span className="font-display text-xl font-extrabold tracking-tight text-ink">
+            care<span className="text-red">v</span>erse
+          </span>
         </a>
-        <div className="flex items-center gap-6">
-          <a href="#" className="hidden text-sm font-extrabold text-body hover:text-ink transition-colors sm:block">
-            Creator Network
+        <div className="flex items-center gap-5">
+          <a href="#" className="hidden text-sm font-semibold text-ink underline underline-offset-4 transition-colors hover:text-red sm:block">
+            Partner Program
           </a>
-          <Button href="https://careverse-creator-application.vercel.app/" variant="ink" className="h-11 px-5 text-sm">
+          <Button onClick={onCTAClick} variant="ink" className="h-10 px-5 text-sm">
             Apply to join
           </Button>
         </div>

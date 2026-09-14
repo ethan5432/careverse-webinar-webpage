@@ -7,8 +7,8 @@
     scroll-behavior: smooth;
   }
   body {
-    font-family: "Inter", "Avenir Next", "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
     @apply bg-cream text-body font-normal antialiased;
-    line-height: 1.62;
+    line-height: 1.6;
   }
 }

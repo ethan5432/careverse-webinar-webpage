@@ -1,28 +1,39 @@
 import { Heart, DollarSign, Users } from 'lucide-react';
 
 const items = [
-  { icon: Heart, text: 'Already talk about care, wellness, family, beauty, or fitness.' },
-  { icon: DollarSign, text: 'Want a simple way to earn when you help people.' },
-  { icon: Users, text: 'Get questions and don’t have a next step to send people to.' },
+  {
+    icon: Heart,
+    title: 'Creators',
+    body: 'You already talk about care, wellness, family, beauty, or fitness — and you want a simple way to earn when you help your audience.',
+  },
+  {
+    icon: DollarSign,
+    title: 'Agencies & businesses',
+    body: 'You already serve an audience or a client base, and you want to add care benefits — and margin — to what you offer, under your own brand.',
+  },
+  {
+    icon: Users,
+    title: 'Networks',
+    body: 'You manage creators, agencies, affiliates, or sellers, and you want to earn across everyone you bring in.',
+  },
 ];
 
 export default function WhoFor() {
   return (
     <section className="bg-soft">
-      <div className="mx-auto max-w-6xl px-6 py-16">
-        <p className="mb-10 text-center font-sans text-2xl font-bold tracking-tight text-ink sm:text-3xl">
-          This is for creators who
-        </p>
-        <div className="grid gap-5 sm:grid-cols-3">
-          {items.map(({ icon: Icon, text }, i) => (
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <h2 className="mb-12 text-center font-display text-h2 text-ink">This is for</h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          {items.map(({ icon: Icon, title, body }) => (
             <div
-              key={i}
-              className="rounded-card bg-white p-7 ring-1 ring-line transition-shadow hover:shadow-md"
+              key={title}
+              className="rounded-card bg-white p-8 shadow-sm ring-1 ring-line transition-shadow hover:shadow-md"
             >
-              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-cream text-ink">
-                <Icon className="h-5 w-5" />
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-cream">
+                <Icon className="h-5 w-5 text-ink" />
               </div>
-              <p className="text-[15px] font-normal leading-[1.55] text-muted">{text}</p>
+              <h3 className="mb-2 font-display text-lg font-bold text-ink">{title}</h3>
+              <p className="text-sm leading-relaxed text-muted">{body}</p>
             </div>
           ))}
         </div>
