@@ -151,7 +151,7 @@ export default function Hero() {
               <Check className="h-3 w-3 text-good" />
             </span>
             <p className="text-[13px] font-extrabold text-body">
-              No follower minimum. Earn 25% commission on every purchase.
+              No follower minimum. Earn on every purchase.
             </p>
           </div>
 

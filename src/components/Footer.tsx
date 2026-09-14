@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row">
         <div className="flex items-center">
           <img src="/careverse_wordmark.svg" alt="Careverse" className="h-6 object-contain brightness-0 invert" />
-          <span className="ml-2 text-sm text-night-text">· Care Access PBC</span>
+
         </div>
         <Button href="https://webinar-registration-page-six.vercel.app/" variant="white" className="h-11 px-5 text-sm">
           Reserve my seat
