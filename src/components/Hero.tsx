@@ -1,4 +1,4 @@
-import { Calendar, Clock, Timer, Play, Pause, Check } from 'lucide-react';
+import { Calendar, Clock, Timer, Play, Pause } from 'lucide-react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Button from './Button';
 
@@ -102,21 +102,14 @@ export default function Hero({ onCTAClick }: HeroProps) {
     <section className="bg-cream">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
         <div>
-          <div className="mb-5 flex items-center gap-3">
-            <span className="h-[3px] w-6 bg-red" />
-            <span className="text-xs font-bold uppercase tracking-eyebrow text-red">Partner Webinar</span>
-          </div>
+          <p className="mb-5 text-xs font-bold uppercase tracking-eyebrow text-body">Partner webinar</p>
 
           <h1 className="font-display text-h1 text-ink">
-            See <span className="text-red">Careverse™</span> in action
+            Inside the Careverse Partner Program
           </h1>
 
-          <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted">
-            A 45-minute session on Careverse and how creators, agencies, and networks partner with us.
-          </p>
-
-          <p className="mt-3 max-w-lg text-base leading-relaxed text-muted">
-            See how people find cost and coverage, book the visit and the follow-up, and keep every provider in one thread — so no one starts from scratch.
+          <p className="mt-6 max-w-lg text-lg leading-relaxed text-body">
+            Join us for a walkthrough of Careverse, Lidia, and the partner program — including what you'll be offering your audience and how partners earn from qualifying membership conversions.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-medium text-ink">
@@ -137,7 +130,7 @@ export default function Hero({ onCTAClick }: HeroProps) {
 
           <div className="mt-8">
             <Button onClick={onCTAClick} variant="ink">
-              Reserve my seat
+              Register
             </Button>
           </div>
 

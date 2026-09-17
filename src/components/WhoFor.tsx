@@ -1,4 +1,4 @@
-import { Heart, DollarSign, Users } from 'lucide-react';
+import { Heart, DollarSign } from 'lucide-react';
 
 const items = [
   {
@@ -11,19 +11,17 @@ const items = [
     title: 'Agencies & businesses',
     body: 'You already serve an audience or a client base, and you want to add care benefits — and margin — to what you offer, under your own brand.',
   },
-  {
-    icon: Users,
-    title: 'Networks',
-    body: 'You manage creators, agencies, affiliates, or sellers, and you want to earn across everyone you bring in.',
-  },
 ];
 
 export default function WhoFor() {
   return (
     <section className="bg-soft">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="mb-12 text-center font-display text-h2 text-ink">This is for</h2>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="mb-12 flex flex-col items-center gap-4">
+          <h2 className="text-center font-display text-h2 text-ink">This is for</h2>
+          <span className="h-[3px] w-10 bg-line" />
+        </div>
+        <div className="grid gap-6 md:grid-cols-2">
           {items.map(({ icon: Icon, title, body }) => (
             <div
               key={title}

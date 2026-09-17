@@ -39,8 +39,9 @@ export default function RegistrationModal({ open, onClose }: RegistrationModalPr
       <div
         ref={dialogRef}
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-md rounded-card bg-white p-8 shadow-2xl"
+        className="relative w-full max-w-md overflow-hidden rounded-card bg-white p-8 shadow-2xl"
       >
+        <div className="absolute left-0 top-0 h-1 w-full bg-red" />
         <button
           ref={closeBtnRef}
           onClick={onClose}
@@ -60,7 +61,7 @@ export default function RegistrationModal({ open, onClose }: RegistrationModalPr
           </div>
         ) : (
           <>
-            <h2 className="font-display text-2xl font-bold text-ink">Reserve your seat</h2>
+            <h2 className="font-display text-2xl font-bold text-ink">Register</h2>
             <p className="mt-1 text-sm text-muted">September 30 · 2:00 PM ET · 45 minutes</p>
             <form
               className="mt-6 space-y-4"
@@ -106,14 +107,13 @@ export default function RegistrationModal({ open, onClose }: RegistrationModalPr
                   <option value="" disabled>Select one</option>
                   <option value="creator">Creator</option>
                   <option value="agency">Agency or business</option>
-                  <option value="network">Network</option>
                 </select>
               </div>
               <button
                 type="submit"
                 className="mt-2 inline-flex h-[54px] w-full items-center justify-center rounded-full bg-ink text-[15px] font-bold text-white transition-all duration-220 hover:-translate-y-0.5 hover:bg-[#333]"
               >
-                Reserve my seat
+                Register
               </button>
             </form>
           </>

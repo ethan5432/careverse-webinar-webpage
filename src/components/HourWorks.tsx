@@ -2,7 +2,7 @@ import { Eye, Send, Headphones } from 'lucide-react';
 
 const steps = [
   { icon: Eye, text: 'Watch a live demo from a global healthcare leader' },
-  { icon: Send, text: 'See how creators, agencies, and networks partner with Careverse™' },
+  { icon: Send, text: 'See how creators, agencies, and businesses partner with Careverse™' },
   { icon: Headphones, text: 'Apply to join the program' },
 ];
 
@@ -10,7 +10,10 @@ export default function HourWorks() {
   return (
     <section className="bg-soft">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="mb-14 text-center font-display text-h2 text-ink">How the session works</h2>
+        <div className="mb-14 flex flex-col items-center gap-4">
+          <h2 className="text-center font-display text-h2 text-ink">How the session works</h2>
+          <span className="h-[3px] w-10 bg-line" />
+        </div>
         <div className="grid gap-10 md:grid-cols-3">
           {steps.map(({ icon: Icon, text }, i) => (
             <div key={i} className="flex flex-col items-center text-center">

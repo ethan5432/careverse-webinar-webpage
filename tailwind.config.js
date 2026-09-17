@@ -4,19 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#1A1A1A',
-        body: '#1A1A1A',
-        muted: '#5C5C5C',
-        cream: '#F3F1EC',
-        soft: '#ECEAE3',
+        ink: '#18191D',
+        body: '#4A4D55',
+        muted: '#4A4D55',
+        cream: '#F6F3EE',
+        soft: '#F1EFE9',
         white: '#FFFFFF',
         line: '#E6E1D8',
         red: {
-          DEFAULT: '#C8102E',
-          deep: '#A00D24',
+          DEFAULT: '#E1062C',
+          deep: '#B10522',
         },
         night: {
-          DEFAULT: '#1A1A1A',
+          DEFAULT: '#18191D',
           text: '#9CA3AF',
         },
         good: '#0B9B6B',

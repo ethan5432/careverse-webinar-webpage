@@ -1,14 +1,17 @@
 const items = [
   { num: '01', title: 'What Careverse™ actually does', text: 'A live look at the product.' },
   { num: '02', title: 'How it helps people', text: 'Making care easier to find, understand, and trust.' },
-  { num: '03', title: 'How you fit', text: "How the program works for creators, agencies, and networks — and how to apply when you're ready." },
+  { num: '03', title: 'How you fit', text: "How the program works for creators, agencies, and businesses — and how to apply when you're ready." },
 ];
 
 export default function WalkAway() {
   return (
     <section className="bg-cream">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="mb-12 text-center font-display text-h2 text-ink">What you'll walk away with</h2>
+        <div className="mb-12 flex flex-col items-center gap-4">
+          <h2 className="text-center font-display text-h2 text-ink">What you'll walk away with</h2>
+          <span className="h-[3px] w-10 bg-line" />
+        </div>
         <div className="grid gap-6 md:grid-cols-3">
           {items.map(({ num, title, text }) => (
             <div

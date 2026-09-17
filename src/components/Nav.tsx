@@ -16,7 +16,7 @@ export default function Nav({ onCTAClick }: NavProps) {
             Partner Program
           </a>
           <Button onClick={onCTAClick} variant="ink" className="h-10 px-5 text-sm">
-            Apply to join
+            Register
           </Button>
         </div>
       </nav>
