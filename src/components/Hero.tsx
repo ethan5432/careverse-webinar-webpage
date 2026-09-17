@@ -102,10 +102,10 @@ export default function Hero({ onCTAClick }: HeroProps) {
     <section className="bg-cream">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:py-24">
         <div>
-          <p className="mb-5 text-xs font-bold uppercase tracking-eyebrow text-body">Partner webinar</p>
+          <p className="mb-5 text-xs font-bold uppercase tracking-eyebrow text-body">Webinar</p>
 
           <h1 className="font-display text-h1 text-ink">
-            Inside the Careverse Partner Program
+            <span className="text-red">Inside</span> the Careverse Partner Program
           </h1>
 
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-body">
